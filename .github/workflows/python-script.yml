@@ -1,0 +1,31 @@
+# This workflow will install Python dependencies and run the main script
+
+name: Python Script
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+  schedule:
+    - cron: "0 0/12 * * *"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+          python-version: '3.10'
+          cache: 'pip' # caching pip dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Run main script
+      run: |
+        python main.py
+    - uses: stefanzweifel/git-auto-commit-action@v4
