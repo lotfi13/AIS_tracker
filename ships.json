@@ -1,12 +1,22 @@
 [
     {
-    "name": "Harmony of The Seas",
+    "name": "Harmony of the Seas",
     "shipid": "372127",
     "imo": "9682875"
 },
 {
-    "name": "Voyager of The Seas",
+    "name": "Voyager of the Seas",
     "shipid": "374600",
     "imo": "9161716"
+},
+{
+    "name": "Wonder of the Seas",
+    "shipid": "5873566",
+    "imo": "9838345"
+},
+{
+    "name": "Symphony of the Seas",
+    "shipdi": "5345430",
+    "imo": "9744001"
 }
 ]
