@@ -1,4 +1,4 @@
-# AIS Free API
+# AIS Tracker
 
 > THIS IS MANLY A PROOF OF CONCEPT. IT IS NOT PRODUCTION READY.
 
@@ -31,7 +31,7 @@ is the `shipid` from MarineTraffic. The other fields are only here for readabili
 
 You can customize the script by altering the `vars_to_keep` in `main.py` to include or exclude different variables from the API response. By default
 only longitude and latitude are saved.
-As it is a hidden API, do documentation is given. Here is a full response sample:
+As it is a hidden API, no documentation is given. Here is a full response sample that you can use:
 
 ```python
 {'isVesselInRange': True,
