@@ -1,6 +1,8 @@
 import requests
 import time
 import json
+import pandas as pd
+
 
 with open('ships.json') as json_file:
     ships = json.load(json_file)
@@ -36,3 +38,7 @@ with open('out.jsonl', 'a') as f:
     for entry in json_filtered:
         json.dump(entry, f)
         f.write('\n')
+        
+#transform the json into csv        
+df = pd.read_json (out.jsonl)
+df.to_csv (out.csv', index = None)
