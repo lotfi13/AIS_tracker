@@ -40,5 +40,6 @@ with open('out.jsonl', 'a') as f:
         json.dump(entry, f)
         f.write('\n')
         
-
+df = pd.read_json ('out.jsonl')
+df.to_csv ('out.csv', index = None)
            
