@@ -2,6 +2,7 @@ import requests
 import time
 import json
 import csv
+import pandas as pd
 
 
 with open('ships.json') as json_file:
